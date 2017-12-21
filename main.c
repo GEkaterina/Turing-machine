@@ -8,7 +8,7 @@
 
 int main(int ac,char **av)
 {
-    FILE* ptrFile = fopen("test.txt" , "r");/*open a file to read from the argument string*/
+    FILE* ptrFile = fopen(av[1] , "r");/*open a file to read from the argument string*/
     char mystring[255], zv[254];
     int* lenta;
     int n = 0, i = 0;/*i-position in the tape n - number of cells in the tape*/
